@@ -1,0 +1,23 @@
+<div class="mt-4 parcelHeader">  <h2 class="text-center mb-4">Parcel Delivery System</h2>
+  <mat-toolbar color="primary" class="mb-4">
+    <span class="mat-h3 logo">
+      <img src="https://cdn.prod.website-files.com/6634c630368fa8491bbf4ca7/6634d4f5f42f07b47068d76c_logo-riskchallenger.svg" loading="lazy" data-w-id="b5f82737-5bb1-c702-1c90-33b17979bcf8" alt="" class="logo" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    </span>
+    <span class="spacer"></span>
+    <button mat-button  routerLink="/" class="text-center menu"
+     [ngClass]="{'selected-menu-item': selectedMenu === 'Home'}"  (click)="selectMenu('Home')">Home</button>
+     <button mat-button  routerLink="/dashboard" class="text-center menu"
+      [ngClass]="{'selected-menu-item': selectedMenu === 'dashboard'}"  (click)="selectMenu('dashboard')">Dashboard</button>
+     <button mat-button routerLink="/departments" class="text-center menu" 
+     [ngClass]="{'selected-menu-item': selectedMenu === 'Department'}" (click)="selectMenu('Department')">Department</button>
+     <button mat-button routerLink="/parcel" class="text-center menu" 
+     [ngClass]="{'selected-menu-item': selectedMenu === 'parcel'}" (click)="selectMenu('parcel')">Parcel</button>
+  </mat-toolbar>
+</div>
+<div class="container mt-4">
+  <mat-card class="mb-4">
+    <router-outlet></router-outlet>
+  </mat-card>
+</div>
+
+
