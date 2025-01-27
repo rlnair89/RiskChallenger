@@ -24,7 +24,7 @@ This is an Angular-based Parcel Delivery System that allows users to manage parc
 
 1. Clone the repository:
 
-   git clone https://github.com/rlnair89/RISK-CHALLENGER.git
+   git clone https://github.com/rlnair89/RiskChallenger.git
    cd parcel-delivery-system
 
 2. Install dependencies:
